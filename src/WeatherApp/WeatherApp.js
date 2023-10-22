@@ -31,7 +31,9 @@ const WeatherApp = () => {
 
 	return (
 		<div>
-			<h1>Weather App</h1>
+			<h1>
+				Weather <span class="highlight"></span>App
+			</h1>
 			<form onSubmit={handleSubmit}>
 				<input
 					type="text"
