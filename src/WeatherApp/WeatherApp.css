@@ -1,6 +1,7 @@
 .container {
 	display: flex;
 	justify-content: space-evenly;
+	margin-top: 60px;
 }
 
 span {
@@ -22,9 +23,10 @@ form {
 }
 
 input {
-	padding: 20px;
 	border: none;
 	border-radius: 50px;
+	font-family: "Poppins";
+	padding: 20px;
 	width: 100%;
 }
 
@@ -36,6 +38,7 @@ button {
 	padding: 1em 1em 1em 1em;
 	margin-top: 20px;
 	width: 100%;
+	font-family: "Poppins";
 }
 
 button:hover {
