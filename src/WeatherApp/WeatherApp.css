@@ -19,7 +19,6 @@ form {
 	display: grid;
 	justify-content: space-evenly;
 	width: 20%;
-	margin: 2em;
 }
 
 input {
@@ -56,5 +55,4 @@ button:hover {
 	display: grid;
 	justify-content: space-evenly;
 	width: 20%;
-	margin: 2em;
 }

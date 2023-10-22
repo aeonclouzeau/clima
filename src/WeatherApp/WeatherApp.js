@@ -24,11 +24,7 @@ const WeatherApp = () => {
 		}
 	};
 
-	useEffect(() => {
-		// Puedes usar esta función para cargar el clima por defecto al cargar la página.
-		// Simplemente proporciona una ubicación inicial y llama a handleSubmit.
-		// handleSubmit({ target: { value: 'Ciudad,País' } });
-	}, []);
+	useEffect(() => {}, []);
 
 	return (
 		<div>
