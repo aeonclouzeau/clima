@@ -5,6 +5,7 @@
 body,
 html {
 	margin: 0;
+	align-items: center;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 }
 
 h1 {
-	background-color: #89cff3;
+	background-color: #00a9ff;
 	color: #fff;
 	margin-top: 0;
 	padding: 1rem;

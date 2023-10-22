@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./WeatherApp.css";
 
 const WeatherApp = () => {
 	const [location, setLocation] = useState("");
@@ -32,28 +33,30 @@ const WeatherApp = () => {
 	return (
 		<div>
 			<h1>
-				Weather <span class="highlight"></span>App
+				Weather <span className="highlight"></span>App
 			</h1>
-			<form onSubmit={handleSubmit}>
-				<input
-					type="text"
-					placeholder="Enter desired location"
-					value={location}
-					onChange={handleLocationChange}
-				/>
-				<button type="submit">Obtener Clima</button>
-			</form>
+			<div class="container">
+				<form onSubmit={handleSubmit}>
+					<input
+						type="text"
+						placeholder="Enter desired location"
+						value={location}
+						onChange={handleLocationChange}
+					/>
+					<button type="submit">Obtener Clima</button>
+				</form>
 
-			{weatherData && (
-				<div>
-					<h2>
-						Clima en {weatherData.name}, {weatherData.sys.country}
-					</h2>
-					<p>Temperatura: {weatherData.main.temp}°C</p>
-					<p>Descripción: {weatherData.weather[0].description}</p>
-					{/* Puedes agregar más detalles del clima aquí */}
-				</div>
-			)}
+				{weatherData && (
+					<div class="data_container">
+						<h2>
+							Clima en {weatherData.name}, {weatherData.sys.country}
+						</h2>
+						<p>Temperatura: {weatherData.main.temp}°C</p>
+						<p>Descripción: {weatherData.weather[0].description}</p>
+						{/* Puedes agregar más detalles del clima aquí */}
+					</div>
+				)}
+			</div>
 		</div>
 	);
 };
