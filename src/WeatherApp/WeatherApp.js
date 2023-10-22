@@ -19,7 +19,7 @@ const WeatherApp = () => {
 				`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`
 			);
 
-			// Realiza la conversión de grados Kelvin a grados Celsius
+			// conversión de grados Kelvin a grados Celsius
 			const tempCelsius = response.data.main.temp - 273.15;
 			response.data.main.temp = tempCelsius;
 
@@ -54,7 +54,6 @@ const WeatherApp = () => {
 						</h2>
 						<p>Feels like: {weatherData.main.temp.toFixed(2)}°C</p>
 						<p>Looks like: {weatherData.weather[0].description}</p>
-						{/* Puedes agregar más detalles del clima aquí */}
 					</div>
 				)}
 			</div>
