@@ -5,7 +5,7 @@ const WeatherApp = () => {
 	const [location, setLocation] = useState("");
 	const [weatherData, setWeatherData] = useState(null);
 
-	const apiKey = "TU_API_KEY"; // Reemplaza con tu propia API key de OpenWeatherMap
+	const apiKey = "d3045006b2ffa1d7eb6e5aaf90f5d245";
 
 	const handleLocationChange = (e) => {
 		setLocation(e.target.value);
@@ -35,7 +35,7 @@ const WeatherApp = () => {
 			<form onSubmit={handleSubmit}>
 				<input
 					type="text"
-					placeholder="Ingresa una ubicación (Ejemplo: Ciudad,País)"
+					placeholder="Enter desired location"
 					value={location}
 					onChange={handleLocationChange}
 				/>
