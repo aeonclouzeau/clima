@@ -43,16 +43,16 @@ const WeatherApp = () => {
 						value={location}
 						onChange={handleLocationChange}
 					/>
-					<button type="submit">Obtener Clima</button>
+					<button type="submit">Get forcast</button>
 				</form>
 
 				{weatherData && (
 					<div class="data_container">
 						<h2>
-							Clima en {weatherData.name}, {weatherData.sys.country}
+							Forcast in {weatherData.name}, {weatherData.sys.country}
 						</h2>
-						<p>Temperatura: {weatherData.main.temp}°C</p>
-						<p>Descripción: {weatherData.weather[0].description}</p>
+						<p>Feels like: {weatherData.main.temp}°C</p>
+						<p>Looks like: {weatherData.weather[0].description}</p>
 						{/* Puedes agregar más detalles del clima aquí */}
 					</div>
 				)}
