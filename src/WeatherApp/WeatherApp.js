@@ -33,7 +33,7 @@ const WeatherApp = () => {
 	return (
 		<div>
 			<h1>
-				Weather <span className="highlight"></span>App
+				Weather <span className="highlight">App</span>
 			</h1>
 			<div class="container">
 				<form onSubmit={handleSubmit}>
